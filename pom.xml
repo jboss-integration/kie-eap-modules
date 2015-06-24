@@ -13,6 +13,7 @@
 
   <properties>
     <version.fuse.eap>6.2.0.redhat-124</version.fuse.eap>
+    <version.maven>3.0.5</version.maven>
   </properties>
   
   <dependencyManagement>

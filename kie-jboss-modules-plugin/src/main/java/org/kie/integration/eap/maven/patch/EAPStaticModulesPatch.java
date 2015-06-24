@@ -1,12 +1,10 @@
 package org.kie.integration.eap.maven.patch;
 
-import org.kie.integration.eap.maven.distribution.EAPStaticLayerDistribution;
-import org.kie.integration.eap.maven.model.graph.EAPModuleGraphNode;
 import org.kie.integration.eap.maven.model.layer.EAPLayer;
 import org.kie.integration.eap.maven.model.module.EAPModule;
 import org.kie.integration.eap.maven.model.resource.EAPModuleResource;
 import org.kie.integration.eap.maven.util.EAPArtifactUtils;
-import org.eclipse.aether.artifact.Artifact;
+import org.sonatype.aether.artifact.Artifact;
 
 import java.util.Collection;
 import java.util.List;

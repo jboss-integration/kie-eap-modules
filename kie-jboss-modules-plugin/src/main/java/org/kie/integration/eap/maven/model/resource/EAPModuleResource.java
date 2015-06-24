@@ -15,7 +15,7 @@
  */
 package org.kie.integration.eap.maven.model.resource;
 
-import org.eclipse.aether.graph.Exclusion;
+import org.sonatype.aether.graph.Exclusion;
 
 import java.util.Collection;
 

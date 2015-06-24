@@ -1,10 +1,7 @@
 package org.kie.integration.eap.maven.patch;
 
-import org.kie.integration.eap.maven.model.graph.EAPModuleGraphNode;
-import org.kie.integration.eap.maven.model.module.EAPModule;
 import org.kie.integration.eap.maven.util.EAPArtifactsHolder;
 import org.kie.integration.eap.maven.util.EAPConstants;
-import org.eclipse.aether.artifact.Artifact;
 
 import java.util.*;
 

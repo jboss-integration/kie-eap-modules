@@ -16,7 +16,7 @@
 package org.kie.integration.eap.maven.model.resource;
 
 import org.kie.integration.eap.maven.util.EAPArtifactUtils;
-import org.eclipse.aether.artifact.Artifact;
+import org.sonatype.aether.artifact.Artifact;
 
 public class EAPArtifactOptionalResource extends EAPArtifactResource {
 

@@ -1,20 +1,17 @@
 package org.kie.integration.eap.maven.patch;
 
 import org.apache.maven.artifact.versioning.ComparableVersion;
-import org.apache.maven.plugin.MojoExecutionException;
 import org.codehaus.plexus.component.annotations.Component;
 import org.kie.integration.eap.maven.eap.EAPContainer;
 import org.kie.integration.eap.maven.model.graph.EAPModuleGraphNode;
 import org.kie.integration.eap.maven.model.module.EAPDynamicModule;
-import org.kie.integration.eap.maven.model.module.EAPModule;
 import org.kie.integration.eap.maven.template.assembly.EAPAssemblyTemplate;
 import org.kie.integration.eap.maven.template.assembly.EAPAssemblyTemplateFile;
 import org.kie.integration.eap.maven.util.EAPArtifactUtils;
 import org.kie.integration.eap.maven.util.EAPConstants;
 import org.kie.integration.eap.maven.util.EAPFileUtils;
-import org.kie.integration.eap.maven.util.EAPXMLUtils;
-import org.eclipse.aether.artifact.Artifact;
-import org.eclipse.aether.resolution.ArtifactResolutionException;
+import org.sonatype.aether.artifact.Artifact;
+import org.sonatype.aether.resolution.ArtifactResolutionException;
 
 import java.io.File;
 import java.io.IOException;

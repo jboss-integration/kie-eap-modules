@@ -22,9 +22,10 @@ import org.kie.integration.eap.maven.exception.EAPModuleResourceDuplicationExcep
 import org.kie.integration.eap.maven.model.module.EAPModule;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.eclipse.aether.RepositorySystemSession;
-import org.eclipse.aether.artifact.Artifact;
-import org.eclipse.aether.repository.RemoteRepository;
+import org.sonatype.aether.RepositorySystem;
+import org.sonatype.aether.RepositorySystemSession;
+import org.sonatype.aether.artifact.Artifact;
+import org.sonatype.aether.repository.RemoteRepository;
 
 import java.util.List;
 
@@ -65,7 +66,7 @@ public class EAPArtifactsHolderTest {
     protected EAPArtifactsHolder artifactsHolder;
 
     @Mock
-    protected org.eclipse.aether.RepositorySystem repoSystem;
+    protected RepositorySystem repoSystem;
 
     @Mock
     protected RepositorySystemSession repoSession;

@@ -1,19 +1,12 @@
 package org.kie.integration.eap.maven.patch;
 
-import org.apache.maven.plugin.MojoFailureException;
 import org.kie.integration.eap.maven.distribution.EAPStaticLayerDistribution;
 import org.kie.integration.eap.maven.model.graph.EAPModuleGraphNode;
 import org.kie.integration.eap.maven.model.graph.EAPModuleGraphNodeResource;
-import org.kie.integration.eap.maven.model.graph.EAPModulesGraph;
 import org.kie.integration.eap.maven.model.module.EAPDynamicModule;
-import org.kie.integration.eap.maven.model.module.EAPModule;
-import org.kie.integration.eap.maven.model.resource.EAPModuleResource;
-import org.kie.integration.eap.maven.template.EAPTemplateBuilder;
 import org.kie.integration.eap.maven.template.assembly.EAPAssemblyTemplate;
 import org.kie.integration.eap.maven.util.EAPArtifactUtils;
-import org.kie.integration.eap.maven.util.EAPArtifactsHolder;
-import org.kie.integration.eap.maven.util.EAPConstants;
-import org.eclipse.aether.artifact.Artifact;
+import org.sonatype.aether.artifact.Artifact;
 
 import java.util.Collection;
 import java.util.LinkedList;

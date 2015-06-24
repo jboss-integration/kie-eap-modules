@@ -27,28 +27,29 @@ import org.kie.integration.eap.maven.model.graph.EAPModuleGraphNodeResource;
 import org.kie.integration.eap.maven.model.graph.EAPModulesGraph;
 import org.kie.integration.eap.maven.model.module.EAPModule;
 import org.kie.integration.eap.maven.model.resource.EAPModuleResource;
-import org.eclipse.aether.RepositorySystem;
-import org.eclipse.aether.RepositorySystemSession;
-import org.eclipse.aether.artifact.Artifact;
-import org.eclipse.aether.collection.CollectRequest;
-import org.eclipse.aether.collection.CollectResult;
-import org.eclipse.aether.collection.DependencyCollectionException;
-import org.eclipse.aether.collection.DependencySelector;
-import org.eclipse.aether.graph.Dependency;
-import org.eclipse.aether.graph.DependencyFilter;
-import org.eclipse.aether.graph.DependencyNode;
-import org.eclipse.aether.graph.Exclusion;
-import org.eclipse.aether.repository.RemoteRepository;
-import org.eclipse.aether.resolution.ArtifactRequest;
-import org.eclipse.aether.resolution.ArtifactResolutionException;
-import org.eclipse.aether.resolution.DependencyResolutionException;
-import org.eclipse.aether.DefaultRepositorySystemSession;
-import org.eclipse.aether.artifact.DefaultArtifact;
-import org.eclipse.aether.util.graph.selector.AndDependencySelector;
-import org.eclipse.aether.util.graph.selector.ExclusionDependencySelector;
-import org.eclipse.aether.util.graph.selector.OptionalDependencySelector;
-import org.eclipse.aether.util.graph.selector.ScopeDependencySelector;
-import org.eclipse.aether.util.graph.transformer.NoopDependencyGraphTransformer;
+import org.sonatype.aether.RepositorySystem;
+import org.sonatype.aether.RepositorySystemSession;
+import org.sonatype.aether.artifact.Artifact;
+import org.sonatype.aether.collection.CollectRequest;
+import org.sonatype.aether.collection.CollectResult;
+import org.sonatype.aether.collection.DependencyCollectionException;
+import org.sonatype.aether.collection.DependencySelector;
+import org.sonatype.aether.graph.Dependency;
+import org.sonatype.aether.graph.DependencyFilter;
+import org.sonatype.aether.graph.DependencyNode;
+import org.sonatype.aether.graph.Exclusion;
+import org.sonatype.aether.repository.RemoteRepository;
+import org.sonatype.aether.resolution.ArtifactRequest;
+import org.sonatype.aether.resolution.ArtifactResolutionException;
+import org.sonatype.aether.resolution.DependencyResolutionException;
+import org.sonatype.aether.util.DefaultRepositorySystemSession;
+import org.sonatype.aether.util.artifact.DefaultArtifact;
+import org.sonatype.aether.util.graph.selector.AndDependencySelector;
+import org.sonatype.aether.util.graph.selector.ExclusionDependencySelector;
+import org.sonatype.aether.util.graph.selector.OptionalDependencySelector;
+import org.sonatype.aether.util.graph.selector.ScopeDependencySelector;
+import org.sonatype.aether.util.graph.transformer.NoopDependencyGraphTransformer;
+
 
 import java.io.File;
 import java.io.FileReader;
@@ -127,7 +128,6 @@ public class EAPArtifactUtils {
      * @param classifier The artifact's classifier..
      * @return The artifact resolved.
      *
-     * @throws org.eclipse.aether.resolution.ArtifactResolutionException
      */
     public static Artifact resolveArtifact(String groupId, String artifactId, String version, String packaging, String classifier, RepositorySystem repoSystem, RepositorySystemSession repoSession, List<RemoteRepository> remoteRepos) throws ArtifactResolutionException {
         Artifact art = createArtifact(groupId, artifactId, version, packaging, classifier);
@@ -143,7 +143,6 @@ public class EAPArtifactUtils {
      * @param packaging The artifact's packaging..
      * @return The artifact resolved.
      *
-     * @throws org.eclipse.aether.resolution.ArtifactResolutionException
      */
     public static Artifact resolveArtifact(String groupId, String artifactId, String version, String packaging, RepositorySystem repoSystem, RepositorySystemSession repoSession, List<RemoteRepository> remoteRepos) throws ArtifactResolutionException {
         Artifact art = createArtifact(groupId, artifactId, version, packaging);
@@ -156,7 +155,6 @@ public class EAPArtifactUtils {
      * @param art The artifact to resolve.
      * @return The artifact resolved.
      *
-     * @throws ArtifactResolutionException
      */
     public static Artifact resolveArtifact(Artifact art, RepositorySystem repoSystem, RepositorySystemSession repoSession, List<RemoteRepository> remoteRepos) throws ArtifactResolutionException {
         ArtifactRequest request = new ArtifactRequest(art, remoteRepos, "");
@@ -476,7 +474,7 @@ public class EAPArtifactUtils {
         }
     }
 
-    public static Artifact toArtifact( org.eclipse.aether.graph.Dependency dependency )
+    public static Artifact toArtifact( Dependency dependency )
     {
         if ( dependency == null )
         {
@@ -499,7 +497,6 @@ public class EAPArtifactUtils {
      * @param rootArtifact The artifact to generate the dependency graph.
      * @return The artifact dependency graph.
      *
-     * @throws org.eclipse.aether.collection.DependencyCollectionException
      */
     public static DependencyNode getDependencyGraph(Artifact rootArtifact, RepositorySystem repoSystem, RepositorySystemSession repoSession, List<RemoteRepository> remoteRepos, boolean includeOptionalDependencies)
             throws DependencyCollectionException, DependencyResolutionException {

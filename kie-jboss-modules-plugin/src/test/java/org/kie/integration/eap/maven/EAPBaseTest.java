@@ -26,9 +26,10 @@ import org.kie.integration.eap.maven.util.EAPArtifactsHolder;
 import org.mockito.ArgumentMatcher;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.eclipse.aether.RepositorySystemSession;
-import org.eclipse.aether.artifact.Artifact;
-import org.eclipse.aether.repository.RemoteRepository;
+import org.sonatype.aether.RepositorySystem;
+import org.sonatype.aether.RepositorySystemSession;
+import org.sonatype.aether.artifact.Artifact;
+import org.sonatype.aether.repository.RemoteRepository;
 
 import java.io.File;
 import java.net.URL;
@@ -54,7 +55,7 @@ public abstract class EAPBaseTest {
     protected Log logger;
 
     @Mock
-    protected org.eclipse.aether.RepositorySystem repoSystem;
+    protected RepositorySystem repoSystem;
 
     @Mock
     protected RepositorySystemSession repoSession;
