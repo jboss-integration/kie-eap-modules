@@ -62,8 +62,8 @@
     <module>kie-eap-modules</module>
     <module>kie-eap-distributions</module>
     <!-- Fuse EAP Integration Pack is using Java 7 and the KIE EAP modules for 6.2.x branch uses Java 6.
-         Enable the following module when moving to Java 7. -->
-    <!--<module>kie-fuse-config-editor</module>-->
+         However, we can still compile with Java 6 and let the integration pack use Java 7 at runtime. -->
+    <module>kie-fuse-config-editor</module>
   </modules>
 
   <dependencies>
