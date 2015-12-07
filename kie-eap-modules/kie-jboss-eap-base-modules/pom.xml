@@ -5,7 +5,7 @@
   <parent>
     <artifactId>kie-eap-modules</artifactId>
     <groupId>org.kie.modules</groupId>
-    <version>6.2.1-SNAPSHOT</version>
+    <version>6.2.2.20151221-prod</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
