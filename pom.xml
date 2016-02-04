@@ -13,15 +13,15 @@
   <name>KIE EAP - Drools and jBPM Module layers for JBoss EAP</name>
 
   <properties>
-    <version.fuse.eap>6.2.0.redhat-124</version.fuse.eap>
+    <version.org.wildfly.extras.patch.fuse-patch-config>1.6.1</version.org.wildfly.extras.patch.fuse-patch-config>
   </properties>
-  
+
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>com.redhat.fuse</groupId>
-        <artifactId>fuse-eap-config</artifactId>
-        <version>${version.fuse.eap}</version>
+        <groupId>org.wildfly.extras.patch</groupId>
+        <artifactId>fuse-patch-config</artifactId>
+        <version>${version.org.wildfly.extras.patch.fuse-patch-config}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -41,19 +41,6 @@
         <enabled>true</enabled>
         <updatePolicy>daily</updatePolicy>
       </snapshots>
-    </repository>
-    <!-- Note: repo.fusesource.com is the correct repo for JBoss Fuse and it is not a mistake -->
-    <repository>
-      <id>fusesource.ea</id>
-      <name>JBoss Community Early Access Release Repository</name>
-      <url>https://repo.fusesource.com/nexus/content/groups/ea</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-      </releases>
     </repository>
   </repositories>
   
