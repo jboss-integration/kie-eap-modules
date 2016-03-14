@@ -44,6 +44,10 @@
       <artifactId>org.eclipse.sisu.plexus</artifactId>
       <type>jar</type>
     </dependency>
+    <dependency>
+      <groupId>com.google.inject.extensions</groupId>
+      <artifactId>guice-servlet</artifactId>
+    </dependency>
 
     <dependency>
       <groupId>org.eclipse.sisu</groupId>
