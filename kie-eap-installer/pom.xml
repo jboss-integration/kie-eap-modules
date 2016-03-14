@@ -45,6 +45,7 @@
   <name>KIE EAP - Installer</name>
   
   <properties>
+    <!--INCLUDED because was failing due to java 1.6 restriction -->
     <animal.sniffer.skip>true</animal.sniffer.skip>
   </properties>
   <dependencies>

@@ -17,7 +17,7 @@
     <files>
         <file>
             <source>src/main/resources/org/springframework/core/resources/module.xml</source>
-            <outputDirectory>/modules/system/layers/bpms/org/springframework/core/3.0</outputDirectory>
+            <outputDirectory>/modules/system/layers/bpms/org/springframework/core/3.x</outputDirectory>
             <filtered>true</filtered>
         </file>
     </files>
@@ -27,7 +27,7 @@
             <includes>
                 <include>org.springframework:spring-core</include>
             </includes>
-            <outputDirectory>/modules/system/layers/bpms/org/springframework/core/3.0</outputDirectory>
+            <outputDirectory>/modules/system/layers/bpms/org/springframework/core/3.x</outputDirectory>
         </dependencySet>
     </dependencySets>
 </component>
