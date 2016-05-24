@@ -95,6 +95,12 @@
   <dependencies>
     <dependency>
       <groupId>org.kie</groupId>
+      <artifactId>kie-eap-distribution</artifactId>
+      <type>zip</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.kie</groupId>
       <artifactId>kie-internal</artifactId>
       <scope>test</scope>
     </dependency>
