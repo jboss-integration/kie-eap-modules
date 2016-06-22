@@ -52,9 +52,10 @@
                 <artifactItem>
                   <groupId>org.kie</groupId>
                   <artifactId>kie-eap-distribution</artifactId>
-                  <version>${project.version}</version>
+                  <version>${version.org.kie}</version>
                   <type>zip</type>
                   <overWrite>true</overWrite>
+                  <destFileName>kie-eap-distribution-${version.org.kie}.zip</destFileName>
                 </artifactItem>
               </artifactItems>
             </configuration>
