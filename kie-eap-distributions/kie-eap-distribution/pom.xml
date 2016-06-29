@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.kie</groupId>
     <artifactId>kie-eap-distributions</artifactId>
-    <version>6.4.1.20160531-productized</version>
+    <version>6.4.1.20160629-productized</version>
   </parent>
 
   <artifactId>kie-eap-distribution</artifactId>
