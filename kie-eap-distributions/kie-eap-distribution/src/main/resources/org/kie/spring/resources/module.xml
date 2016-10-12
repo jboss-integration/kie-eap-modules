@@ -24,10 +24,10 @@
     <module name="org.apache.poi"/>
     <module name="org.jbpm"/>
     <module name="org.slf4j"/>
-    <module name="org.springframework.tx" slot="3.x"/>
-    <module name="org.springframework.beans" slot="3.x"/>
-    <module name="org.springframework.context" slot="3.x"/>
-    <module name="org.springframework.core" slot="3.x"/>
+    <module name="org.springframework.tx" slot="4.x"/>
+    <module name="org.springframework.beans" slot="4.x"/>
+    <module name="org.springframework.context" slot="4.x"/>
+    <module name="org.springframework.core" slot="4.x"/>
     <module name="com.sun.xml.bind"/>
     <module name="com.thoughtworks.xstream">
       <exports>

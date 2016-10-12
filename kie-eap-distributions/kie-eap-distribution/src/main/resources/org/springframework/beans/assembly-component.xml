@@ -18,7 +18,7 @@
   <files>
     <file>
       <source>src/main/resources/org/springframework/beans/resources/module.xml</source>
-      <outputDirectory>modules/system/layers/bpms/org/springframework/beans/3.x</outputDirectory>
+      <outputDirectory>modules/system/layers/bpms/org/springframework/beans/4.x</outputDirectory>
       <filtered>true</filtered>
     </file>
   </files>
@@ -28,7 +28,7 @@
       <includes>
         <include>org.springframework:spring-beans</include>
       </includes>
-      <outputDirectory>modules/system/layers/bpms/org/springframework/beans/3.x</outputDirectory>
+      <outputDirectory>modules/system/layers/bpms/org/springframework/beans/4.x</outputDirectory>
     </dependencySet>
   </dependencySets>
 </component>

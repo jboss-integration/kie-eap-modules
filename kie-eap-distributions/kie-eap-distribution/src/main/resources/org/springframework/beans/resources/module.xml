@@ -12,7 +12,7 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<module xmlns="urn:jboss:module:1.0" name="org.springframework.beans" slot="3.x">
+<module xmlns="urn:jboss:module:1.0" name="org.springframework.beans" slot="4.x">
  <properties>
     <property name="jboss.api" value="private" />
   </properties>
@@ -22,7 +22,7 @@
   <dependencies>
     <module name="javax.api" />
     <module name="org.apache.commons.logging" />
-    <module name="org.springframework.context" slot="3.x"/>
-    <module name="org.springframework.core" slot="3.x"/>
+    <module name="org.springframework.context" slot="4.x"/>
+    <module name="org.springframework.core" slot="4.x"/>
   </dependencies>
 </module>
