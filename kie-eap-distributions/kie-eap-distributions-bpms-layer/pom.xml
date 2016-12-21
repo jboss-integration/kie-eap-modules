@@ -71,6 +71,13 @@
 
     <dependency>
       <groupId>org.kie.modules</groupId>
+      <artifactId>org-apache-commons-collections4</artifactId>
+      <version>${project.version}</version>
+      <type>pom</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.kie.modules</groupId>
       <artifactId>org-apache-commons-compress</artifactId>
       <version>${project.version}</version>
       <type>pom</type>
@@ -298,6 +305,13 @@
     <dependency>
       <groupId>org.kie.modules</groupId>
       <artifactId>com-sun-xml-bind-core</artifactId>
+      <version>${project.version}</version>
+      <type>pom</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.kie.modules</groupId>
+      <artifactId>com-github-virtuald</artifactId>
       <version>${project.version}</version>
       <type>pom</type>
     </dependency>

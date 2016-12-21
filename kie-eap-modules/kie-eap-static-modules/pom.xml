@@ -23,6 +23,7 @@
     <module>org-apache-ant</module>
     <module>org-codehouse-plexus</module>
     <module>org-apache-commons-math</module>
+    <module>org-apache-commons-collections4</module>
     <module>org-apache-commons-compress</module>
     <module>org-apache-commons-exec</module>
     <module>org-apache-helix</module>
@@ -73,6 +74,7 @@
     <module>rome</module>
     <module>xmlpull</module>
     <module>xpp3</module>
+    <module>com-github-virtuald</module>
     <module>com-google-code-gson</module>
     <module>com-fasterxml-jackson</module>
     <module>org-reflections</module>
