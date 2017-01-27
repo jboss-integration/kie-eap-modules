@@ -5,7 +5,7 @@
   <parent>
     <artifactId>kie-eap-modules</artifactId>
     <groupId>org.kie.modules</groupId>
-    <version>6.5.1.20170120-productized</version>
+    <version>6.5.1.20170127-productized</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
