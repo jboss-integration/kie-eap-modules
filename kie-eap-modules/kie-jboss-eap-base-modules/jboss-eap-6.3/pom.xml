@@ -5,7 +5,7 @@
   <parent>
     <artifactId>kie-jboss-eap-base-modules</artifactId>
     <groupId>org.kie.modules</groupId>
-    <version>6.5.1.20170731-productized</version>
+    <version>6.5.1.20170817-productized</version>
   </parent>
 
 
