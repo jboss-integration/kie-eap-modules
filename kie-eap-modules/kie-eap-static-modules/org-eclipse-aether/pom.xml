@@ -20,7 +20,7 @@
   <parent>
     <groupId>org.kie.modules</groupId>
     <artifactId>kie-eap-static-modules</artifactId>
-    <version>6.5.1-SNAPSHOT</version>
+    <version>6.5.1.20180104-prod</version>
   </parent>
 
   <groupId>org.kie.modules</groupId>
